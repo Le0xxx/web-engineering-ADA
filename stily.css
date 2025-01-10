@@ -1,12 +1,21 @@
 body {
     font-family: sans-serif;
     margin: 20px;
+    background-color: #f5f5dc; /* Цвет фона - бежевый */
+    background-image: url("images/background.jpg"); /* Фон - ваше изображение */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header {
     text-align: center;
     padding: 20px 0;
-    background-color: #f0f0f0;
+}
+
+.header-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 section {
@@ -14,6 +23,14 @@ section {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон для секций */
+}
+
+.menu-image, .location-image {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    display: block; /* Занимает всю ширину контейнера */
 }
 
 ul {
@@ -30,4 +47,3 @@ footer {
     padding: 10px 0;
     background-color: #f0f0f0;
 }
-
