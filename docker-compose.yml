@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  fastapi:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/app
+    depends_on:
+      - db: # Пример для базы данных PostgreSQL
+        image: postgres:13
+        ports:
+          - "5432:5432"
+        environment:
+          - POSTGRES_USER=myuser
+          - POSTGRES_PASSWORD=mypassword
+          - POSTGRES_DB=myshaurmadb
